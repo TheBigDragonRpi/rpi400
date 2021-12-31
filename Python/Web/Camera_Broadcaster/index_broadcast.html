@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<html>
+	<body>
+		<div id="parent">
+			<img src='img.jpg' alt='img.jpg' width='320' id="img">
+		</div>
+		<script>
+			setInterval(function(){
+					var timestamp = new Date().getTime();  
+					var img = document.getElementById("img");  
+					img.src = "img.jpg?"+timestamp;
+					}, 66); // 15 FPS
+		</script>
+	</body>
+</html>
